@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+ 
+<body>
+<label for="valami">Keresőmező</label>
+<input type="search" id="valami" name="q">
+<nav>
+  <a href="/views/form.ejs">Macska űrlap</a> |
+  </nav>
+
+<button>Search</button>
+  <table style="border: 2px solid black; text-align: center;">
+      <tr>
+        <th>Súly</td>
+          <th>Szem szín</td>
+      </tr>
+      <tr>
+         
+      </tr>
+      <% for (let m of macskak) {%>
+        <tr>
+          <td><%= m.suly %> </td><br>
+          <td><%= m.szem_szin %></td><br>
+        </a>
+        </tr>
+      <% } %>
+</table>
+  </body>
+</html>
